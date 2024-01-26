@@ -7,6 +7,7 @@ from .nodes.Text.TextLine import TextLine
 from .nodes.Text.RF_TextInput import RF_TextInput
 from .nodes.Text.RF_TextConcatenate import RF_TextConcatenate
 from .nodes.Text.RF_TextReplace import RF_TextReplace
+from .nodes.Text.RF_OptionsString import RF_OptionsString
 
 from .nodes.ToString.RF_Vec3ToString import RF_Vec3ToString
 from .nodes.ToString.RF_Vec2ToString import RF_Vec2ToString
@@ -19,6 +20,7 @@ from .nodes.ToString.RF_ToString import RF_ToString
 from .nodes.Array.RF_RangeInt import RF_RangeInt
 from .nodes.Array.RF_RangeFloat import RF_RangeFloat
 from .nodes.Array.RF_RangeNumber import RF_RangeNumber
+from .nodes.Array.RF_AtIndexString import RF_AtIndexString
 
 from .nodes.Log.RF_LogString import RF_LogString
 from .nodes.Log.RF_LogVec3 import RF_LogVec3
@@ -29,6 +31,7 @@ from .nodes.Log.RF_LogBool import RF_LogBool
 from .nodes.Log.RF_LogInt import RF_LogInt
 
 from .nodes.Json.RF_JsonStyleLoader import RF_JsonStyleLoader
+from .nodes.File.RF_SavePromptInfo import RF_SavePromptInfo
 
 # A dictionary that contains all nodes you want to export with their names
 # NOTE: names should be globally unique
@@ -37,6 +40,7 @@ NODE_CLASS_MAPPINGS = {
     "RF_Timestamp": RF_Timestamp,
     "RF_SplitLines": RF_TextLines,
     "RF_MergeLines": RF_TextMergeLines,
+    "RF_OptionsString": RF_OptionsString,
 
     "RF_TextInput": RF_TextInput,
     "TextLine": TextLine,
@@ -57,6 +61,7 @@ NODE_CLASS_MAPPINGS = {
     "RF_RangeInt": RF_RangeInt,
     "RF_RangeFloat": RF_RangeFloat,
     "RF_RangeNumber": RF_RangeNumber,
+    "RF_AtIndexString": RF_AtIndexString,
 
     # Log
     "LogInt": RF_LogInt,
@@ -67,7 +72,10 @@ NODE_CLASS_MAPPINGS = {
     "LogVec3": RF_LogVec3,
 
     # Json
-    "RF_JsonStyleLoader": RF_JsonStyleLoader
+    "RF_JsonStyleLoader": RF_JsonStyleLoader,
+
+    # File
+    "RF_SavePromptInfo": RF_SavePromptInfo
 }
 
 # This magic will use a property DISPLAY_NAME on each node to get the display name of the node for the UI

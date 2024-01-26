@@ -4,7 +4,9 @@ class RF_Timestamp:
     @classmethod
     def INPUT_TYPES(cls):
         return { 
-            "required": { }
+            "required": { 
+                "format": ("STRING", { "default": "%Y-%m-%d_%H%M%S" }),
+            }
         }
 
     # We use this to indicate that the output of the node changes outside of the UI
@@ -19,5 +21,5 @@ class RF_Timestamp:
     RETURN_TYPES = ("STRING",)
 
     FUNCTION = "NodeProcess"
-    def NodeProcess(self):
-        return datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+    def NodeProcess(self, format):
+        return datetime.now().strftime(format),
