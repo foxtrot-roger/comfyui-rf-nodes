@@ -1,0 +1,14 @@
+[project]
+name = "comfyui-rf-nodes"
+description = "A bunch of nodes that can be useful to manipulate primitive types (numbers, text, ...) Also some helpers to generate text and timestamps."
+version = "1.0.0"
+license = "LICENSE"
+
+[project.urls]
+Repository = "https://github.com/foxtrot-roger/comfyui-rf-nodes"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = ""
+DisplayName = "comfyui-rf-nodes"
+Icon = ""
