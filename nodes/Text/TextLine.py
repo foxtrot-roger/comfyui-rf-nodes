@@ -13,6 +13,7 @@ class TextLine:
             },
         }
 
+    DISPLAY_NAME = "TextLine"
     CATEGORY = "RF"
     
     RETURN_TYPES = ("STRING",)
