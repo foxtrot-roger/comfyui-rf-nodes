@@ -8,17 +8,23 @@ class RF_FloatToString:
             "required": {
                 "value": ("FLOAT", {
                     "forceInput": True,
+                    "step": 0.00001,
+                    "round": False,
+                }),
+                "precision": ("INT", {
+                    "default": 2,
                 }),
             },
         }
 
     DISPLAY_NAME = "To string (FLOAT)"
-    CATEGORY = "RF"
+    CATEGORY = "RF/toString"
 
     RETURN_TYPES = ("STRING",)
     RETURN_NAMES = ("STRING",)
 
     FUNCTION = "NodeProcess"
-    def NodeProcess(self, value):
-        result = str(value)
+    def NodeProcess(self, value, precision):
+        print(type(value))
+        result = result = f"{value:.{precision}f}"
         return (result,)

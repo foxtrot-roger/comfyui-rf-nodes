@@ -18,7 +18,7 @@ class RF_LogBool:
         }
 
     DISPLAY_NAME = "Log (BOOL)"
-    CATEGORY = "RF"
+    CATEGORY = "RF/logging"
 
     RETURN_TYPES = ("BOOL",)
     RETURN_NAMES = ("BOOL",)
@@ -28,4 +28,3 @@ class RF_LogBool:
     def NodeProcess(self, value, prefix):
         LogToConsole(value, prefix)
         return (value,)
-

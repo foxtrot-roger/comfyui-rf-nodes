@@ -13,12 +13,13 @@ class RF_Vec2ToString:
         }
 
     DISPLAY_NAME = "To string (VEC2)"
-    CATEGORY = "RF"
+    CATEGORY = "RF/toString"
 
     RETURN_TYPES = ("STRING",)
     RETURN_NAMES = ("STRING",)
 
     FUNCTION = "NodeProcess"
     def NodeProcess(self, value):
+        print(type(value))
         result = str(value)
         return (result,)

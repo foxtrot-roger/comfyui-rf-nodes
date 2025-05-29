@@ -6,11 +6,11 @@ class RF_RangeNumber:
                 "start": ("NUMBER", { "default": 0 }),
                 "step": ("NUMBER", { "default": 1 }),
                 "count": ("NUMBER", { "default": 10 }),
-             },
+            },
         }
 
     DISPLAY_NAME = "Repeat (NUMBER)"
-    CATEGORY = "RF"
+    CATEGORY = "RF/primitives/array"
 
     RETURN_NAMES = ("values",)
     RETURN_TYPES = ("NUMBER",)

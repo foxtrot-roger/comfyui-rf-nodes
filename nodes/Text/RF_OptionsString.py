@@ -5,11 +5,11 @@ class RF_OptionsString:
             "required": {
                 "index": ("INT", { "default": 0 }),
                 "text": ("STRING", { "default": "", "multiline": True }),
-             }
+            },
         }
 
     DISPLAY_NAME = "One of (STRING)"
-    CATEGORY = "RF"
+    CATEGORY = "RF/text"
 
     RETURN_NAMES = ("text",)
     RETURN_TYPES = ("STRING",)

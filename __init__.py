@@ -17,11 +17,6 @@ from .nodes.ToString.RF_BoolToString import RF_BoolToString
 from .nodes.ToString.RF_IntToString import RF_IntToString
 from .nodes.ToString.RF_ToString import RF_ToString
 
-from .nodes.Array.RF_RangeInt import RF_RangeInt
-from .nodes.Array.RF_RangeFloat import RF_RangeFloat
-from .nodes.Array.RF_RangeNumber import RF_RangeNumber
-from .nodes.Array.RF_AtIndexString import RF_AtIndexString
-
 from .nodes.Log.RF_LogString import RF_LogString
 from .nodes.Log.RF_LogVec3 import RF_LogVec3
 from .nodes.Log.RF_LogVec2 import RF_LogVec2
@@ -32,6 +27,12 @@ from .nodes.Log.RF_LogInt import RF_LogInt
 
 from .nodes.Json.RF_JsonStyleLoader import RF_JsonStyleLoader
 from .nodes.File.RF_SavePromptInfo import RF_SavePromptInfo
+
+from .nodes.Primitives.RF_FloatPrimitive import RF_FloatPrimitive
+from .nodes.Primitives.Array.RF_RangeInt import RF_RangeInt
+from .nodes.Primitives.Array.RF_RangeFloat import RF_RangeFloat
+from .nodes.Primitives.Array.RF_RangeNumber import RF_RangeNumber
+from .nodes.Primitives.Array.RF_AtIndexString import RF_AtIndexString
 
 # A dictionary that contains all nodes you want to export with their names
 # NOTE: names should be globally unique
@@ -46,7 +47,7 @@ NODE_CLASS_MAPPINGS = {
     "TextLine": TextLine,
     "RF_TextReplace": RF_TextReplace,
     "RF_TextConcatenate": RF_TextConcatenate,
-    
+
     # ToString
     "RF_ToString": RF_ToString,
     "RF_IntToString": RF_IntToString,
@@ -56,14 +57,16 @@ NODE_CLASS_MAPPINGS = {
     "RF_Vec2ToString": RF_Vec2ToString,
     "RF_Vec3ToString": RF_Vec3ToString,
     "LogString": RF_LogString,
-    
+
     # primitives
+    "RF_FloatPrimitive": RF_FloatPrimitive,
     "RF_RangeInt": RF_RangeInt,
     "RF_RangeFloat": RF_RangeFloat,
     "RF_RangeNumber": RF_RangeNumber,
     "RF_AtIndexString": RF_AtIndexString,
 
     # Log
+    "LogString": RF_LogString,
     "LogInt": RF_LogInt,
     "LogBool": RF_LogBool,
     "LogFloat": RF_LogFloat,

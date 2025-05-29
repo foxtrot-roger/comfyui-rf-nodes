@@ -25,7 +25,7 @@ class RF_TextConcatenate:
         }
 
     DISPLAY_NAME = "Concatenate"
-    CATEGORY = "RF"
+    CATEGORY = "RF/text"
 
     RETURN_TYPES = ("STRING",)
     RETURN_NAMES = ("STRING",)

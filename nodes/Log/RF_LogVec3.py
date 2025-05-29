@@ -18,7 +18,7 @@ class RF_LogVec3:
         }
 
     DISPLAY_NAME = "Log (VEC3)"
-    CATEGORY = "RF"
+    CATEGORY = "RF/logging"
 
     RETURN_TYPES = ("VEC3",)
     RETURN_NAMES = ("VEC3",)

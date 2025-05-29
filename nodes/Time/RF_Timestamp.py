@@ -15,7 +15,7 @@ class RF_Timestamp:
         return datetime.now()
 
     DISPLAY_NAME = "Timestamp (STRING)"
-    CATEGORY = "RF"
+    CATEGORY = "RF/time"
 
     RETURN_NAMES = ("time",)
     RETURN_TYPES = ("STRING",)

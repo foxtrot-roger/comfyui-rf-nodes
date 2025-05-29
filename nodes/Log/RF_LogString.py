@@ -18,7 +18,7 @@ class RF_LogString:
         }
 
     DISPLAY_NAME = "Log (STRING)"
-    CATEGORY = "RF"
+    CATEGORY = "RF/logging"
 
     RETURN_TYPES = ("STRING",)
     RETURN_NAMES = ("STRING",)

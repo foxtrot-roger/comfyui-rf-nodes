@@ -41,7 +41,7 @@ def load_styles_from_directory(directory):
                 combined_data.append(item)
 
     unique_style_names = [item['name'] for item in combined_data if isinstance(item, dict) and 'name' in item]
-    
+
     return combined_data, unique_style_names
 
 def validate_json_data(json_data):
@@ -80,7 +80,7 @@ class RF_JsonStyleLoader:
         }
 
     DISPLAY_NAME = "Style from JSON file"
-    CATEGORY = "RF"
+    CATEGORY = "RF/json"
 
     RETURN_TYPES = ("STRING", "STRING")
     RETURN_NAMES = ("positive", "negative")

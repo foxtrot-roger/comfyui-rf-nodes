@@ -18,7 +18,7 @@ class RF_LogFloat:
         }
 
     DISPLAY_NAME = "Log (FLOAT)"
-    CATEGORY = "RF"
+    CATEGORY = "RF/logging"
 
     RETURN_TYPES = ("FLOAT",)
     RETURN_NAMES = ("FLOAT",)

@@ -25,7 +25,7 @@ class RF_SavePromptInfo:
     OUTPUT_NODE = True
 
     DISPLAY_NAME = "Save prompt to file"
-    CATEGORY = "RF"
+    CATEGORY = "RF/file"
 
     def save_prompt(self, filename_prefix, indent, prompt):
         full_output_folder, filename, counter, subfolder, filename_prefix = folder_paths.get_save_image_path(filename_prefix, self.output_dir, 0, 0)

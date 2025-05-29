@@ -13,7 +13,7 @@ class RF_TextInput:
         }
 
     DISPLAY_NAME = "Input (STRING)"
-    CATEGORY = "RF"
+    CATEGORY = "RF/text"
 
     RETURN_TYPES = ("STRING",)
     RETURN_NAMES = ("STRING",)

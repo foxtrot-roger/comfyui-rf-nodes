@@ -18,7 +18,7 @@ class RF_LogNumber:
         }
 
     DISPLAY_NAME = "Log (NUMBER)"
-    CATEGORY = "RF"
+    CATEGORY = "RF/logging"
 
     RETURN_TYPES = ("NUMBER",)
     RETURN_NAMES = ("NUMBER",)
